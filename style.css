@@ -1,0 +1,18 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+/* ROOT */
+:root {
+  --back-element: #f7f7ff;
+  --back-text: #ffffff;
+  --text: #202839;
+  --secont-color-text: #6c7281;
+  --secont-color-text-2: #8f939c;
+  --accents: #fd5c3e;
+}
+
+/* header */
