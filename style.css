@@ -337,6 +337,7 @@ ul {
 }
 
 .solutions {
+  padding: 0 1rem 0 1rem;
   max-width: var(--full-size);
 }
 
@@ -407,6 +408,7 @@ h4 {
 }
 
 .stereotypes {
+  padding: 0 1rem 0 1rem;
   display: flex;
   max-width: var(--full-size);
 }
@@ -702,12 +704,12 @@ h4 {
 /* SEC4 */
 
 .section-4 {
-  background-image: url(../bookkeeping/img/fon3.png);
+  padding-bottom: 5rem;
+  background-image: url(../bookkeeping/img/fon4.png);
   margin: 0 auto;
   max-width: var(--back-size);
 }
 .sec4-main {
-  padding-bottom: 5rem;
   padding-top: 5rem;
   margin: 0 auto;
   max-width: var(--full-size);
@@ -733,6 +735,232 @@ h4 {
 }
 
 .tariff {
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
   display: flex;
   max-width: var(--full-size);
+}
+
+.all-tariff {
+  box-shadow: 0px 0px 14px 0px rgba(69, 90, 222, 0.64);
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(69, 90, 222, 0.64);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(69, 90, 222, 0.64);
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  width: 30%;
+}
+
+.tariff-P {
+  background-image: url(../bookkeeping/img/фон.png);
+  margin: 0;
+  color: var(--secont-color-text-2);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 70%;
+}
+.tariff-H2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.tariff-button {
+  transition: 0.5s;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: var(--accents);
+  width: 18rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+
+.tariff-button:hover {
+  transform: scale(115%);
+}
+
+.tariff-ul {
+  margin-left: 2rem;
+  line-height: 1.5rem;
+  width: 60%;
+}
+.traff-li {
+  color: var(--accents);
+  margin-bottom: 1rem;
+}
+
+.li-color {
+  color: var(--text);
+}
+
+.tariff-P-xl {
+  background-image: url(../bookkeeping/img/фон.png);
+  margin: 0;
+  color: var(--secont-color-text-2);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+/* SEC5 */
+.section-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  max-width: var(--full-size);
+}
+
+.sec5-head {
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  max-width: var(--full-size);
+}
+
+.title-sec5 {
+  color: var(--text);
+  font-size: 2rem;
+  width: 35%;
+}
+.text-sec5 {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--secont-color-text-2);
+  line-height: 1.8rem;
+  width: 34%;
+}
+.review {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-image: url(../bookkeeping/img/fon2.png);
+}
+.review-scroll {
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.review-img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+.title-name-rev {
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+  display: flex;
+}
+.rev-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.rev-txt {
+  color: var(--secont-color-text-2);
+  width: 20rem;
+}
+.rev-data {
+  color: var(--secont-color-text-2);
+}
+
+/* sec6 */
+.fon6 {
+  background-image: url(../bookkeeping/img/fon-blue.png);
+  margin: 0 auto;
+  max-width: var(--back-size);
+}
+
+.section-6 {
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  max-width: var(--full-size);
+}
+.main-application {
+  position: relative;
+  height: 30rem;
+  display: flex;
+  max-width: var(--full-size);
+}
+.img-application {
+  height: 100%;
+  width: 50%;
+}
+.app-img {
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.application {
+  padding: 5rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background-color: var(--text);
+  height: 100%;
+  width: 50%;
+}
+
+.main-button {
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  background-color: var(--accents);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.main-button:hover {
+  transform: scale(125%);
+}
+.button-application {
+  z-index: 100;
+  left: 41%;
+  top: 45%;
+  position: absolute;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+}
+.app-h3 {
+  line-height: 2.5rem;
+  margin-top: 0;
+  width: 80%;
+  font-size: 1.7rem;
+  color: white;
+}
+
+/* Form */
+hr {
+  height: 1px;
+  border: 0;
+  background-color: var(--secont-color-text);
+}
+.underline {
+  margin-bottom: 2rem;
+  width: 70%;
+}
+.checkbox {
+  display: flex;
+  gap: 1rem;
+}
+.label-check {
+  display: block;
+  color: var(--secont-color-text-2);
+}
+.input-check {
+  background-color: #202839;
+  display: block;
 }
