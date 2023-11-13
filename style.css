@@ -169,21 +169,6 @@ ul {
   height: 15rem;
 }
 
-.main-button {
-  transition: 0.5s;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: none;
-  color: white;
-  background-color: var(--accents);
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
-}
-.main-button:hover {
-  transform: scale(125%);
-}
-
 /* MAIN */
 
 .main {
@@ -193,16 +178,24 @@ ul {
 
 /* SEC1 */
 .section-1 {
-  padding-bottom: 5rem;
+  display: block;
+  position: relative;
   padding-top: 5rem;
   margin: 0 auto;
   max-width: var(--full-size);
 }
 .sec1-head {
+  background-color: white;
+  z-index: 100;
+  position: sticky;
+  top: 0;
   justify-content: space-between;
   padding: 0 1rem 0 1rem;
   display: flex;
   max-width: var(--full-size);
+}
+.sec1-h {
+  margin-bottom: 1rem;
 }
 
 .title-sec1 {
@@ -218,6 +211,8 @@ ul {
   width: 34%;
 }
 .main-autsorsing {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   justify-content: space-between;
   padding: 0 1rem 0 1rem;
   display: flex;
@@ -1180,4 +1175,60 @@ hr {
 .footer-menu {
   margin-left: 0;
   color: var(--back-element);
+}
+
+/* animation */
+.element-animation-right {
+  opacity: 0;
+  transform: translateX(-15%);
+}
+.element-animation-left {
+  opacity: 0;
+  transform: translateX(+25%);
+}
+.element-animation-up {
+  opacity: 0;
+  transform: translateY(-25%);
+}
+.element-animation {
+  opacity: 0;
+  transform: translateY(5%);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+.element-animation-right.element-show-right {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+.element-animation-left.element-show-left {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+.element-animation-up.element-show-up {
+  opacity: 1;
+  transition: 1.5s;
+  transform: translateY(0%);
+}
+
+/* button */
+.main-button {
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  background-color: var(--accents);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.main-button:hover {
+  transition: 0.5s;
+  transform: scale(125%);
 }
