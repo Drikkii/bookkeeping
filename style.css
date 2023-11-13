@@ -94,7 +94,7 @@ ul {
   text-decoration: none;
 }
 .number {
-  margin: 31px 0 31px;
+  margin: 1rem 0 1rem;
   margin-left: auto;
   transition: 0.5s;
   font-weight: 700;
@@ -1178,5 +1178,6 @@ hr {
   width: var(--back-size);
 }
 .footer-menu {
+  margin-left: 0;
   color: var(--back-element);
 }
