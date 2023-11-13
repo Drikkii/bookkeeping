@@ -698,3 +698,41 @@ h4 {
 .right-stereot {
   width: 50%;
 }
+
+/* SEC4 */
+
+.section-4 {
+  background-image: url(../bookkeeping/img/fon3.png);
+  margin: 0 auto;
+  max-width: var(--back-size);
+}
+.sec4-main {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  margin: 0 auto;
+  max-width: var(--full-size);
+}
+.sec4-head {
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+  display: flex;
+  max-width: var(--full-size);
+}
+
+.title-sec4 {
+  color: var(--text);
+  font-size: 2rem;
+  width: 35%;
+}
+.text-sec4 {
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--secont-color-text-2);
+  line-height: 1.8rem;
+  width: 34%;
+}
+
+.tariff {
+  display: flex;
+  max-width: var(--full-size);
+}
