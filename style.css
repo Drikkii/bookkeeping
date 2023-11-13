@@ -6,6 +6,9 @@
   font-family: Manrope;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* ROOT */
 :root {
   /* color */
@@ -1079,15 +1082,6 @@ hr {
   display: block;
   max-width: var(--full-size);
 }
-.mail-p {
-  background-image: url(../bookkeeping/img/фон.png);
-  margin: 0;
-  color: var(--secont-color-text-2);
-  text-align: center;
-  padding: 0.5rem;
-  background-color: white;
-  border-radius: 1rem;
-}
 .number-p {
   margin: 0;
   background-image: url(../bookkeeping/img/фон.png);
@@ -1103,22 +1097,40 @@ hr {
   margin: 0;
 }
 .mailto {
+  width: 100%;
+  display: block;
+  background-color: var(--back-element);
+  margin: 0;
+  color: var(--secont-color-text-2);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
   font-weight: 700;
   transition: 0.5s;
   text-decoration: none;
   color: var(--secont-color-text);
 }
 .mailto:hover {
-  color: #0b76ef;
+  background-color: var(--accents);
+  color: white;
 }
 .tel-number {
+  width: 100%;
+  display: block;
+  margin: 0;
+  color: var(--secont-color-text-2);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--back-element);
+  border-radius: 1rem;
   font-weight: 700;
   transition: 0.5s;
   text-decoration: none;
   color: var(--secont-color-text-2);
 }
 .tel-number:hover {
-  color: #0b76ef;
+  background-color: var(--accents);
+  color: white;
 }
 .all-mail {
   margin-bottom: 1rem;
@@ -1131,11 +1143,14 @@ hr {
   width: 100%;
 }
 .telegram {
+  transition: 0.5s;
   padding: 0.5rem;
   text-align: center;
   border-radius: 1rem;
-  background-image: url(../bookkeeping/img/fon2.png);
   width: 25%;
+}
+.telegram:hover {
+  background-color: var(--accents);
 }
 .icon {
   cursor: pointer;
@@ -1143,9 +1158,7 @@ hr {
   height: 2rem;
   width: 2rem;
 }
-.icon:hover {
-  transform: scale(1.3);
-}
+
 .call-us {
   position: relative;
 
@@ -1160,6 +1173,8 @@ hr {
   border-radius: 50%;
 }
 .call-us:hover {
+  color: white;
+  background-color: var(--accents);
   transform: scale(125%);
 }
 
