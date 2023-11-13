@@ -24,6 +24,7 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <header class="header">
@@ -452,57 +453,46 @@
               </h3>
               <form class="form" action="#" method="post">
                 <div class="underline">
+                  <img class="ppl-icon" src="icon/peapol.png" alt="" />
                   <input
+                    class="name-input"
                     for="name"
                     id="name"
                     name="name"
+                    oninput="if(/[^a-zA-Z,Яа-яЁё , -]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z,Яа-яЁё , - ]/g,'');this.setSelectionRange(Selection, Selection);}"
                     placeholder=" Ваше имя"
                     required
                   />
                   <hr />
                 </div>
                 <div class="underline">
+                  <img class="phone-icon" src="icon/phone.png" alt="" />
                   <input
+                    class="number-input"
                     for="name"
                     id="name"
                     name="name"
-                    placeholder=" Ваше имя"
+                    maxlength="16"
+                    oninput="this.value = this.value.replace(/[^0-9---+-().]/g, '').replace(/(\..*)\./g, '$1');"
+                    placeholder="+7(___)___-__-__"
                     required
                   />
                   <hr />
                 </div>
                 <div class="checkbox">
-                  <input class="input-check" type="checkbox" id="check" name="scales" />
-                  <label class="label-check" for="check"
-                    >Нажимая на кномкую,Вы принимаете условия политики
-                    конфиденциальности</label
+                  <input
+                    class="input-check"
+                    type="checkbox"
+                    id="check"
+                    name="scales"
+                  />
+                  <label for="check"></label>
+                  <label class="label-check" for=""
+                    >Нажимая на кнопку.Вы принимаете условия политики
+                    <a class="form-a" href="#">конфиденциальности</a></label
                   >
                 </div>
               </form>
-              <!-- <form action="#" method="post">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required />
-
-                <label for="phone">Номер телефона:</label>
-                <div class="phone-wrapper">
-                  <span class="phone-prefix">+7</span>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="\d{3}\)\d{3}-\d{2}-\d{2}"
-                    placeholder="(___ )___-__-__"
-                    required
-                  />
-                </div>
-
-                <label>
-                  <input type="checkbox" name="agreement" required />
-                  Согласие с использованием данных
-                </label>
-
-                <button type="submit">Отправить</button>
-              </form> -->
             </div>
             <div class="img-application">
               <img class="app-img" src="img/bokkeeping.jpg" alt="" />
@@ -510,8 +500,79 @@
           </div>
         </section>
       </div>
-      <section class="section-7"></section>
+      <section class="section-7">
+        <div class="sec7-main">
+          <div class="sec7-head">
+            <div class="title-sec7">
+              <h3>У вас есть вопрос,с которым нужна помощь?</h3>
+            </div>
+            <div class="text-sec7">
+              <p>Связаться с нами</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-Feedback">
+          <div class="mail-number-feed">
+            <div class="all-mail">
+              <div class="mail">
+                <p class="mail-p">
+                  <a class="mailto" href="mailto:Byhmail@gmail.com"
+                    >Byhmail@gmail.com</a
+                  >
+                </p>
+              </div>
+              <div class="number-under">
+                <p class="number-p">
+                  <a class="tel-number" href="tel:+7(999)999-99-99"
+                    >+7(999)999-99-99</a
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="icon-feed">
+              <div class="telegram">
+                <img class="icon" src="icon/telegram.png" alt="telegram" />
+              </div>
+              <div class="telegram">
+                <img class="icon" src="icon/telegram.png" alt="telegram" />
+              </div>
+              <div class="telegram">
+                <img class="icon" src="icon/telegram.png" alt="telegram" />
+              </div>
+            </div>
+          </div>
+          <div class="button-feedback">
+            <button class="call-us">Напиши нам</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="head-inside">
+        <h1 class="footer-menu">Ваш бухгалтер</h1>
+        <nav class="navigation">
+          <ul class="nav">
+            <li class="nav-menu">
+              <a class="footer-menu nav-button" href="#About">Услуги</a>
+            </li>
+            <li class="nav-menu">
+              <a class="footer-menu nav-button" href="#Favorites"
+                >Этапы работы</a
+              >
+            </li>
+            <li class="nav-menu">
+              <a class="footer-menu nav-button" href="#coffee-shop">Тарифы</a>
+            </li>
+            <li class="nav-menu">
+              <a class="footer-menu nav-button" href="#our-contacts">Отзывы</a>
+            </li>
+            <li class="nav-menu">
+              <a class="footer-menu nav-button" href="#our-cards">Контаты</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="footer-menu number">+7 (495) 999-99-99</span>
+      </div>
+    </footer>
   </body>
 </html>
