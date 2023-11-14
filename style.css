@@ -341,6 +341,7 @@ ul {
 }
 
 .all-solut {
+  gap: 3rem;
   display: flex;
   max-width: var(--full-size);
 }
@@ -421,6 +422,7 @@ h4 {
   transform: scale(1.5);
 }
 .stereot-first {
+  height: 20%;
   overflow: hidden;
   text-align: center;
   background-image: url(../bookkeeping/img/фон.png);
@@ -437,13 +439,26 @@ h4 {
   display: block;
   width: 100%;
 }
+.text-stereot-1,
+.text-stereot-2,
+.text-stereot-3 {
+  text-align: left;
+  margin-top: 1rem;
+  transition: 1s;
+  opacity: 0;
+}
 .h-ster {
   transition: 5s;
-  margin-bottom: 1rem;
   justify-content: space-between;
   text-align: center;
   width: 100%;
   display: flex;
+}
+.class-hight {
+  height: 40%;
+}
+.class-opasity {
+  opacity: 1;
 }
 .text {
   display: block;
@@ -831,6 +846,9 @@ h4 {
   width: 35%;
 }
 .text-sec5 {
+  display: flex;
+  position: relative;
+  align-items: center;
   padding-top: 1rem;
   font-size: 1.3rem;
   color: var(--secont-color-text-2);
@@ -844,7 +862,7 @@ h4 {
 }
 .review-scroll {
   gap: 2rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   display: flex;
 }
 
@@ -1246,4 +1264,81 @@ hr {
 .main-button:hover {
   transition: 0.5s;
   transform: scale(125%);
+}
+/* slider */
+.max-img-container {
+  transition: all 1s;
+  position: relative;
+  max-width: 100%;
+  justify-content: space-between;
+  display: flex;
+  left: 0;
+}
+.img1 {
+  padding: 0 10px 0 10px;
+}
+/* .img1-div,
+.img2-div,
+.img3-div,
+.img4-div,
+.img5-div {
+  margin: 0 10px 0 10px;
+} */
+
+.curret {
+  float: inline-end;
+  margin: auto;
+  display: flex;
+}
+.carret-lef,
+.carret-rig {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+}
+.disabel-lef,
+.disabel-rig {
+  display: none;
+}
+
+.images-items {
+  overflow: hidden;
+  max-width: 1400px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pagination {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  width: 78px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.pagination-button {
+  cursor: pointer;
+  position: relative;
+  min-width: 26px;
+  min-height: 26px;
+}
+.pagination-click {
+  cursor: pointer;
+  position: absolute;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: black;
+  width: 16px;
+  height: 16px;
+}
+.pagination-click:hover {
+  background-color: #bb945f;
+}
+.active-brown {
+  background-color: #bb945f;
+}
+.button4-pag,
+.button5-pag {
+  display: none;
 }

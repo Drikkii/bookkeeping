@@ -52,3 +52,113 @@ for (let elm of elements3) {
 for (let elm of elements4) {
   observer4.observe(elm);
 }
+
+// Stereotyps - button
+
+let myDiv = document.querySelector(".stereot-first-1");
+let increaseButton = document.querySelector(".arr-1");
+let myDiv2 = document.querySelector(".stereot-first-2");
+let increaseButton2 = document.querySelector(".arr-2");
+let myDiv3 = document.querySelector(".stereot-first-3");
+let increaseButton3 = document.querySelector(".arr-3");
+let increaseText1 = document.querySelector(".text-stereot-1");
+let increaseText2 = document.querySelector(".text-stereot-2");
+let increaseText3 = document.querySelector(".text-stereot-3");
+
+increaseButton.addEventListener("click", function () {
+  myDiv.classList.toggle("class-hight");
+  increaseText1.classList.toggle("class-opasity");
+  myDiv2.classList.remove("class-hight");
+  increaseText2.classList.remove("class-opasity");
+  myDiv3.classList.remove("class-hight");
+  increaseText3.classList.remove("class-opasity");
+});
+increaseButton2.addEventListener("click", function () {
+  myDiv.classList.remove("class-hight");
+  increaseText1.classList.remove("class-opasity");
+  myDiv3.classList.remove("class-hight");
+  increaseText3.classList.remove("class-opasity");
+  myDiv2.classList.toggle("class-hight");
+  increaseText2.classList.toggle("class-opasity");
+});
+increaseButton3.addEventListener("click", function () {
+  myDiv.classList.remove("class-hight");
+  increaseText1.classList.remove("class-opasity");
+  myDiv2.classList.remove("class-hight");
+  increaseText2.classList.remove("class-opasity");
+  myDiv3.classList.toggle("class-hight");
+  increaseText3.classList.toggle("class-opasity");
+});
+
+// slider
+// Исходные данные по слайдеру (const)
+const sliderImages = document.querySelectorAll(".img1-div"),
+  sliderLine = document.querySelector(".max-img-container"),
+  sliderDots = document.querySelectorAll(".pagination-click"),
+  sliderBtnNext = document.querySelector(".carret-rig"),
+  sliderBtnPrev = document.querySelector(".carret-lef");
+
+// Переменные
+let sliderCount = 0,
+  sliderWidth;
+
+// Адаптивность слайдера
+window.addEventListener("resize", showSlide);
+
+// Кнопки листания слайдов вперед и назад
+sliderBtnNext.addEventListener("click", nextSlide);
+sliderBtnPrev.addEventListener("click", prevSlide);
+
+// Автоматическое перелистывание слайдов
+// setInterval(() => {
+//     nextSlide()
+// }, 3000);
+
+// Функции ==================
+// Задает нужную ширину картинки и sliderLine
+function showSlide() {
+  sliderWidth = document.querySelector(".img1").offsetWidth;
+  sliderLine.style.width = sliderWidth * sliderImages.length + "px";
+  //   sliderImages.forEach((item) => (item.style.width = sliderWidth + "px"));
+
+  rollSlider();
+}
+showSlide();
+
+// Перелистывает слайд вперед
+function nextSlide() {
+  sliderCount++;
+  if (sliderCount >= sliderImages.length) sliderCount = 0;
+
+  rollSlider();
+  thisSlide(sliderCount);
+}
+
+// Перелистывает слайд назад
+function prevSlide() {
+  sliderCount--;
+  if (sliderCount < 0) sliderCount = 4;
+
+  rollSlider();
+  thisSlide(sliderCount);
+}
+
+// Задает шаг перемещения слайдов
+function rollSlider() {
+  sliderLine.style.transform = `translateX(${-sliderCount * sliderWidth}px)`;
+}
+
+// Указывает как слайд по счету активен
+function thisSlide(index) {
+  sliderDots.forEach((item) => item.classList.remove("active-brown"));
+  sliderDots[index].classList.add("active-brown");
+}
+
+// Вешает клик на brown
+sliderDots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    sliderCount = index;
+    rollSlider();
+    thisSlide(sliderCount);
+  });
+});
