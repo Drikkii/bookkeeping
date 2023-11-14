@@ -1765,6 +1765,9 @@ hr {
   .input-check-reg:focus + label::before {
     box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
   }
+  .checkbox-reg {
+    gap: 0;
+  }
 }
 @media (max-width: 350px) {
   .input-check-reg:focus + label::before {
@@ -1826,6 +1829,7 @@ hr {
     margin: 0.02rem;
   }
   .checkbox-reg {
+    gap: 0;
     margin-top: 0.5rem;
   }
 }
