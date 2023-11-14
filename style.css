@@ -1710,7 +1710,7 @@ hr {
   .register {
     left: 25%;
     width: 50vw;
-    height: 70vh;
+    height: 40vh;
   }
   .img-reg {
     display: none;
@@ -1718,7 +1718,7 @@ hr {
 }
 @media (max-width: 450px) {
   .label-check-reg {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
   .close-btn span {
     left: 90%;
@@ -1740,23 +1740,23 @@ hr {
   }
   .name-input-reg,
   .number-input-reg {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
   }
   .register-name-reg {
     margin-bottom: 0;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .register-text-reg {
     line-height: 0.3rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 0.3rem;
+    font-size: 0.5rem;
   }
   .reg-button {
-    width: 50%;
-    font-size: 0.5rem;
+    width: 70%;
+    font-size: 0.7rem;
     height: 1.1rem;
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
   }
   hr {
@@ -1784,13 +1784,13 @@ hr {
     margin-bottom: 0.1rem;
   }
   .label-check-reg {
-    font-size: 0.2rem;
+    font-size: 0.5rem;
   }
   .close-btn span {
     left: 90%;
     cursor: pointer;
     flex-shrink: 0;
-    width: 0.3rem;
+    width: 0.5rem;
     height: 0.1rem;
   }
   .application-reg {
@@ -1801,26 +1801,26 @@ hr {
     padding: 0.1rem;
   }
   .input-check-reg + label::before {
-    width: 0.2rem;
-    height: 0.2rem;
+    width: 0.4rem;
+    height: 0.4rem;
   }
   .name-input-reg,
   .number-input-reg {
-    font-size: 0.2rem;
+    font-size: 0.5rem;
   }
   .register-name-reg {
     margin-bottom: 0;
-    font-size: 0.3rem;
+    font-size: 0.5rem;
   }
   .register-text-reg {
     line-height: 0.2rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 0.2rem;
+    font-size: 0.4rem;
   }
   .reg-button {
     width: 50%;
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     height: 0.6rem;
     margin-top: 0.3rem;
     margin-left: 1rem;
