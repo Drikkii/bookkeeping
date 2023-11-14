@@ -168,6 +168,7 @@ sliderDots.forEach((dot, index) => {
 let RegMenu = document.querySelector(".register"); // окно регистрации
 let Regbackground = document.querySelector(".backgrey"); //серый фон в регестрации
 let closeBtn = document.querySelector(".close-btn"); // кнопка закрития окна регистрации
+let closeBtnApp = document.querySelector(".close-btn-app"); // кнопка закрития окна регистрации
 let SignUpCard = document.querySelector(".sing-up");
 let LoginReg = document.querySelector(".log-inreg");
 let zayavka = document.querySelector(".zayavka");
@@ -240,6 +241,24 @@ document.getElementById("crossTwo").addEventListener("mouseover", function () {
     Two.style.background = "";
   });
 });
+let OneApp = document.getElementById("crossTwo-app");
+document
+  .getElementById("crossOne-app")
+  .addEventListener("mouseover", function () {
+    OneApp.style.background = "#ba55d3";
+    this.addEventListener("mouseout", function () {
+      OneApp.style.background = "";
+    });
+  });
+let TwoApp = document.getElementById("crossOne-app");
+document
+  .getElementById("crossTwo-app")
+  .addEventListener("mouseover", function () {
+    TwoApp.style.background = "#ba55d3";
+    this.addEventListener("mouseout", function () {
+      TwoApp.style.background = "";
+    });
+  });
 
 // closing
 Regbackground.addEventListener("click", function () {
@@ -262,6 +281,55 @@ closeBtn.addEventListener("click", function () {
     setTimeout(function () {
       Regbackground.classList.add("hidden");
     }, 300);
+    setTimeout(function () {
+      RegMenu.classList.add("hidden");
+    }, 300);
+  }
+});
+// close app
+
+let Appmenu = document.querySelector(".application-finish");
+let RegButton = document.querySelector(".reg-button");
+let UnderButton = document.querySelector(".application-finish");
+let AppbuttonGood = document.querySelector(".application-button");
+
+closeBtnApp.addEventListener("click", function () {
+  if (!Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.add("visual");
+    Appmenu.classList.add("visual");
+    setTimeout(function () {
+      Regbackground.classList.add("hidden");
+    }, 300);
+    setTimeout(function () {
+      Appmenu.classList.add("hidden");
+    }, 300);
+  }
+});
+AppbuttonGood.addEventListener("click", function () {
+  if (!Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.add("visual");
+    Appmenu.classList.add("visual");
+    setTimeout(function () {
+      Regbackground.classList.add("hidden");
+    }, 300);
+    setTimeout(function () {
+      Appmenu.classList.add("hidden");
+    }, 300);
+  }
+});
+// open app menu
+
+RegButton.addEventListener("click", function () {
+  if (!Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.remove("hidden");
+    Appmenu.classList.remove("hidden");
+    RegMenu.classList.add("visual");
+    setTimeout(function () {
+      Regbackground.classList.remove("visual");
+    }, 500);
+    setTimeout(function () {
+      Appmenu.classList.remove("visual");
+    }, 100);
     setTimeout(function () {
       RegMenu.classList.add("hidden");
     }, 300);

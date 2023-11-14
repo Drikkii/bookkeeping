@@ -1560,6 +1560,81 @@ hr {
   transform: scale(125%);
 }
 
+/*  App-completed*/
+.application-finish {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  z-index: 130;
+  top: 30%;
+  left: 40%;
+  position: fixed;
+  height: 20rem;
+  width: 22rem;
+}
+.checkmark {
+  margin: auto;
+  width: 10%;
+}
+.application-finish-txt {
+  text-align: left;
+  color: var(--secont-color-text-2);
+}
+.application-finish-h {
+  color: var(--text);
+}
+.application-button {
+  transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: var(--accents);
+  width: 12rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+.application-button:hover {
+  transform: scale(115%);
+}
+.close-btn-app {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.close-btn-app span {
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 18px;
+  height: 3px;
+  position: absolute;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+}
+
+.close-btn-app span:nth-of-type(1) {
+  transition: all 0.2s linear;
+  top: 7%;
+  transform: translate(-50%, -6px) rotate(45deg);
+}
+.close-btn-app span:nth-of-type(2) {
+  transition: all 0.2s linear;
+  top: 7%;
+  transform: translate(-50%, -6px) rotate(135deg);
+}
+#crossOne-app:hover {
+  background-color: var(--accents);
+}
+#crossTwo-app:hover {
+  background-color: var(--accents);
+}
+
+/*  */
 .hidden {
   display: none;
 }
