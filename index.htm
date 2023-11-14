@@ -53,7 +53,7 @@
       </div>
       <div class="head-text">
         <div class="inv-button">
-          <button class="main-button element-animation-up">
+          <button class="zayavka main-button element-animation-up">
             Оставить заявку
           </button>
         </div>
@@ -76,6 +76,74 @@
       </div>
     </header>
     <main class="main">
+      <!-- затемнение -->
+      <div class="backgrey visual hidden"></div>
+      <!--  -->
+
+      <!-- Заявка -->
+      <div class="register visual hidden">
+        <img class="img-reg" src="img/bokkeeping.jpg" alt="" />
+        <div class="application-reg">
+          <div class="name-close">
+            <div class="text-title-reg">
+              <p class="register-name-reg">Вам нужна помощь?</p>
+              <p class="register-text-reg">
+                Оставьте свои контактные данные и мы с вами свяжемся в ближайшее
+                время
+              </p>
+            </div>
+
+            <div class="close-btn">
+              <span id="crossOne"></span><span id="crossTwo"></span>
+            </div>
+          </div>
+          <div class="form-ramka">
+            <form class="form-reg" action="#" method="post">
+              <div class="underline-reg">
+                <input
+                  class="name-input-reg"
+                  for="name"
+                  id="name"
+                  name="name"
+                  oninput="if(/[^a-zA-Z,Яа-яЁё , -]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z,Яа-яЁё , - ]/g,'');this.setSelectionRange(Selection, Selection);}"
+                  placeholder=" Ваше имя"
+                  required
+                />
+                <hr />
+              </div>
+              <div class="underline-reg">
+                <input
+                  class="number-input-reg"
+                  for="name"
+                  id="name"
+                  name="name"
+                  maxlength="16"
+                  oninput="this.value = this.value.replace(/[^0-9---+-().]/g, '').replace(/(\..*)\./g, '$1');"
+                  placeholder="+7(___)___-__-__"
+                  required
+                />
+                <hr />
+              </div>
+              <div class="checkbox-reg">
+                <input
+                  class="input-check-reg"
+                  type="checkbox"
+                  id="check"
+                  name="scales"
+                />
+                <label for="check"></label>
+                <label class="label-check-reg" for=""
+                  >Нажимая на кнопку.Вы принимаете условия политики
+                  <a class="form-a-reg" href="#">конфиденциальности</a></label
+                >
+              </div>
+            </form>
+          </div>
+          <button class="reg-button">Оставить заявку</button>
+        </div>
+      </div>
+
+      <!--  -->
       <section class="section-1">
         <div class="sec1-head">
           <div class="title-sec1">
@@ -101,7 +169,7 @@
               Аутсорсинг бухгалтерии - это удаленное её ведение целым штатом
               специалистов по бухгалтерскому налоговому учету
             </p>
-            <button class="aut-button">Оставить заявку</button>
+            <button class="zayavka1 aut-button">Оставить заявку</button>
           </div>
           <div class="categori">
             <div class="all-cat cat1">
@@ -138,7 +206,7 @@
               Аутсорсинг бухгалтерии - это удаленное её ведение целым штатом
               специалистов по бухгалтерскому налоговому учету
             </p>
-            <button class="aut-button">Оставить заявку</button>
+            <button class="zayavka2 aut-button">Оставить заявку</button>
           </div>
           <div class="categori">
             <div class="all-cat cat1">
@@ -175,7 +243,7 @@
               Аутсорсинг бухгалтерии - это удаленное её ведение целым штатом
               специалистов по бухгалтерскому налоговому учету
             </p>
-            <button class="aut-button">Оставить заявку</button>
+            <button class="zayavka3 aut-button">Оставить заявку</button>
           </div>
           <div class="categori">
             <div class="all-cat cat1">

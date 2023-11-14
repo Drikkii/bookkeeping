@@ -162,3 +162,108 @@ sliderDots.forEach((dot, index) => {
     thisSlide(sliderCount);
   });
 });
+
+// need help menu
+
+let RegMenu = document.querySelector(".register"); // окно регистрации
+let Regbackground = document.querySelector(".backgrey"); //серый фон в регестрации
+let closeBtn = document.querySelector(".close-btn"); // кнопка закрития окна регистрации
+let SignUpCard = document.querySelector(".sing-up");
+let LoginReg = document.querySelector(".log-inreg");
+let zayavka = document.querySelector(".zayavka");
+let zayavka1 = document.querySelector(".zayavka1");
+let zayavka2 = document.querySelector(".zayavka2");
+let zayavka3 = document.querySelector(".zayavka3");
+
+// Open zayavka
+zayavka.addEventListener("click", function () {
+  if (Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.remove("hidden");
+    RegMenu.classList.remove("hidden");
+    setTimeout(function () {
+      Regbackground.classList.remove("visual");
+    }, 500);
+    setTimeout(function () {
+      RegMenu.classList.remove("visual");
+    }, 100);
+  }
+});
+zayavka1.addEventListener("click", function () {
+  if (Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.remove("hidden");
+    RegMenu.classList.remove("hidden");
+    setTimeout(function () {
+      Regbackground.classList.remove("visual");
+    }, 500);
+    setTimeout(function () {
+      RegMenu.classList.remove("visual");
+    }, 100);
+  }
+});
+zayavka2.addEventListener("click", function () {
+  if (Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.remove("hidden");
+    RegMenu.classList.remove("hidden");
+    setTimeout(function () {
+      Regbackground.classList.remove("visual");
+    }, 500);
+    setTimeout(function () {
+      RegMenu.classList.remove("visual");
+    }, 100);
+  }
+});
+zayavka3.addEventListener("click", function () {
+  if (Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.remove("hidden");
+    RegMenu.classList.remove("hidden");
+    setTimeout(function () {
+      Regbackground.classList.remove("visual");
+    }, 500);
+    setTimeout(function () {
+      RegMenu.classList.remove("visual");
+    }, 100);
+  }
+});
+
+// Меняем Крестики на цвет (сосед) в меню регистрации!
+let One = document.getElementById("crossTwo");
+document.getElementById("crossOne").addEventListener("mouseover", function () {
+  One.style.background = "#ba55d3";
+  this.addEventListener("mouseout", function () {
+    One.style.background = "";
+  });
+});
+let Two = document.getElementById("crossOne");
+document.getElementById("crossTwo").addEventListener("mouseover", function () {
+  Two.style.background = "#ba55d3";
+  this.addEventListener("mouseout", function () {
+    Two.style.background = "";
+  });
+});
+
+// closing
+Regbackground.addEventListener("click", function () {
+  if (!Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.add("visual");
+    RegMenu.classList.add("visual");
+    setTimeout(function () {
+      Regbackground.classList.add("hidden");
+    }, 300);
+    setTimeout(function () {
+      RegMenu.classList.add("hidden");
+    }, 300);
+  }
+});
+
+closeBtn.addEventListener("click", function () {
+  if (!Regbackground.classList.contains("hidden")) {
+    Regbackground.classList.add("visual");
+    RegMenu.classList.add("visual");
+    setTimeout(function () {
+      Regbackground.classList.add("hidden");
+    }, 300);
+    setTimeout(function () {
+      RegMenu.classList.add("hidden");
+    }, 300);
+  }
+});
