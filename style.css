@@ -1715,6 +1715,27 @@ hr {
   .img-reg {
     display: none;
   }
+  .close-btn span {
+    left: 90%;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 0.7rem;
+    height: 0.1rem;
+  }
+  .register-name-reg {
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 0.5rem;
+  }
+  .text-title-reg {
+    width: 100%;
+  }
+  #crossOne {
+    top: 15%;
+  }
+  #crossTwo {
+    top: 15%;
+  }
 }
 @media (max-width: 450px) {
   .label-check-reg {
@@ -1724,7 +1745,7 @@ hr {
     left: 90%;
     cursor: pointer;
     flex-shrink: 0;
-    width: 0.3rem;
+    width: 0.7rem;
     height: 0.1rem;
   }
   .application-reg {
@@ -1743,11 +1764,12 @@ hr {
     font-size: 0.5rem;
   }
   .register-name-reg {
+    width: 100%;
     margin-bottom: 0;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
   .register-text-reg {
-    line-height: 0.3rem;
+    line-height: 0.5rem;
     margin-bottom: 0;
     margin-top: 0;
     font-size: 0.5rem;
@@ -1768,16 +1790,25 @@ hr {
   .checkbox-reg {
     gap: 0;
   }
+  .text-title-reg {
+    width: 100%;
+  }
+  #crossOne {
+    top: 15%;
+  }
+  #crossTwo {
+    top: 15%;
+  }
 }
 @media (max-width: 350px) {
   .input-check-reg:focus + label::before {
     box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
   }
   #crossOne {
-    top: 10%;
+    top: 15%;
   }
   #crossTwo {
-    top: 10%;
+    top: 15%;
   }
   .underline-reg {
     height: 1rem;
@@ -1808,8 +1839,11 @@ hr {
   .number-input-reg {
     font-size: 0.5rem;
   }
+  .text-title-reg {
+    width: 100%;
+  }
   .register-name-reg {
-    width: 80%;
+    width: 100%;
     margin-bottom: 0;
     font-size: 0.5rem;
   }
