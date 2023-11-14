@@ -79,7 +79,18 @@
       <!-- затемнение -->
       <div class="backgrey visual hidden"></div>
       <!--  -->
-
+      <!-- Заявка completed -->
+      <div class="application-finish visual hidden">
+        <img class="checkmark" src="icon/checkmark.png" alt="icon-finish" />
+        <div class="close-btn-app">
+          <span id="crossOne-app"></span><span id="crossTwo-app"></span>
+        </div>
+        <h3 class="application-finish-h">Ваша заявка принята!</h3>
+        <p class="application-finish-txt">
+          Наш менеджер скоро свяжется с вами и ответит на все вопросы
+        </p>
+        <button class="application-button">Хорошо</button>
+      </div>
       <!-- Заявка -->
       <div class="register visual hidden">
         <img class="img-reg" src="img/bokkeeping.jpg" alt="" />
@@ -105,7 +116,7 @@
                   for="name"
                   id="name"
                   name="name"
-                  oninput="if(/[^a-zA-Z,Яа-яЁё , -]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-Z,Яа-яЁё , - ]/g,'');this.setSelectionRange(Selection, Selection);}"
+                  oninput="if(/[^a-zA-ZА-Яа-яЁё]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-ZА-Яа-яЁё , - ]/g,'');this.setSelectionRange(Selection, Selection);}"
                   placeholder=" Ваше имя"
                   required
                 />
