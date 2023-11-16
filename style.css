@@ -2437,6 +2437,12 @@ hr {
   }
 }
 @media (max-width: 650px) {
+  .element-animation.element-show {
+    transition: 0.5s;
+  }
+  .head-h {
+    font-size: 1.5rem;
+  }
   .button-application {
     top: 70%;
   }
@@ -2605,6 +2611,12 @@ hr {
   }
 }
 @media (max-width: 450px) {
+  .number {
+    display: none;
+  }
+  .main-img {
+    border-radius: 1rem;
+  }
   .main-application {
     display: none;
   }
