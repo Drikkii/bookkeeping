@@ -264,12 +264,16 @@ document
 Regbackground.addEventListener("click", function () {
   if (!Regbackground.classList.contains("hidden")) {
     Regbackground.classList.add("visual");
+    Appmenu.classList.add("visual");
     RegMenu.classList.add("visual");
     setTimeout(function () {
       Regbackground.classList.add("hidden");
     }, 300);
     setTimeout(function () {
       RegMenu.classList.add("hidden");
+    }, 300);
+    setTimeout(function () {
+      Appmenu.classList.add("hidden");
     }, 300);
   }
 });
