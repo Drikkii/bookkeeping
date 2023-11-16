@@ -2437,6 +2437,16 @@ hr {
   }
 }
 @media (max-width: 650px) {
+  .mail {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .all-mail {
+    width: 100%;
+  }
+  .number-under {
+    display: none;
+  }
   .section-6 {
     padding-bottom: 0;
   }
