@@ -2536,6 +2536,27 @@ hr {
   }
 }
 @media (max-width: 550px) {
+  .application-finish {
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    left: 15%;
+  }
+  .reg-button {
+    font-size: 1rem;
+    height: 3rem;
+  }
+  .input-check-reg + label::before {
+    width: 1rem;
+    height: 1rem;
+  }
+  .all-cat {
+    padding-top: 0.5rem;
+    width: 100%;
+  }
+  .rev-txt {
+    width: 15rem;
+  }
   .head-h {
     font-size: 1rem;
   }
@@ -2581,9 +2602,8 @@ hr {
     width: 100%;
   }
   .register {
-    left: 25%;
-    width: 50vw;
-    height: 40vh;
+    width: 75%;
+    height: 50%;
   }
   .img-reg {
     display: none;
@@ -2598,7 +2618,7 @@ hr {
   .register-name-reg {
     width: 100%;
     margin-bottom: 0;
-    font-size: 0.5rem;
+    font-size: 1.6rem;
   }
   .text-title-reg {
     width: 100%;
@@ -2609,8 +2629,29 @@ hr {
   #crossTwo {
     top: 15%;
   }
+  .register-text-reg {
+    line-height: 1rem;
+    font-size: 1rem;
+  }
+  .name-input-reg {
+    font-size: 1rem;
+  }
+  .number-input-reg {
+    font-size: 1rem;
+  }
+  .underline-reg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .label-check-reg {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 450px) {
+  .all-cat {
+    padding-top: 0.5rem;
+    width: 100%;
+  }
   .number {
     display: none;
   }
