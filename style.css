@@ -2667,6 +2667,10 @@ hr {
   }
 }
 @media (max-width: 450px) {
+  .register {
+    width: 75%;
+    height: 70%;
+  }
   .all-cat {
     padding-top: 0.5rem;
     width: 100%;
@@ -2838,6 +2842,10 @@ hr {
   }
 }
 @media (max-width: 350px) {
+  .register {
+    width: 75%;
+    height: 70%;
+  }
   .register-name-reg {
     width: 100%;
     margin-bottom: 0;
