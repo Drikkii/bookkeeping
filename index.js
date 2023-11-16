@@ -335,3 +335,40 @@ RegButton.addEventListener("click", function () {
     }, 300);
   }
 });
+
+// Burger menu
+let menuBtn = document.querySelector(".menu-burger");
+let menu = document.querySelector(".slide-menu-burger");
+let lock = document.querySelector("body");
+let LogoMenu = document.querySelector(".dropMenu");
+
+const toggleMenu = () => {
+  lock.classList.toggle("lock");
+  menu.classList.toggle("active");
+  menuBtn.classList.remove("active");
+};
+
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  lock.classList.toggle("lock");
+  menu.classList.toggle("active");
+  menuBtn.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  let target = e.target;
+  let its_menu = target == menu || menu.contains(target);
+  let its_menuBtn = target == menuBtn;
+  let menu_is_active = menu.classList.contains("active");
+
+  if (!its_menu && !its_menuBtn && menu_is_active) {
+    toggleMenu();
+  }
+});
+menu.addEventListener("click", function (e) {
+  if (e.target.matches("a")) {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    lock.classList.remove("lock");
+  }
+});
