@@ -2437,6 +2437,15 @@ hr {
   }
 }
 @media (max-width: 650px) {
+  .section-6 {
+    padding-bottom: 0;
+  }
+  .main-application {
+    display: none;
+  }
+  .rev-txt {
+    width: 15rem;
+  }
   .element-animation.element-show {
     transition: 0.5s;
   }
@@ -2780,6 +2789,15 @@ hr {
   }
   #crossTwo {
     top: 15%;
+  }
+  .h-years2 {
+    margin-right: 0;
+  }
+  .years2-txt-2 {
+    width: 25%;
+  }
+  .h-operation {
+    width: 25%;
   }
 }
 @media (max-width: 350px) {
