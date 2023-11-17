@@ -535,17 +535,9 @@ h4 {
   width: 3%;
 }
 .arrow:hover {
-  animation-name: quadhide;
-  animation-duration: 1s;
-  animation-delay: 2s; /*задержка*/
-  animation-fill-mode: forwards;
   transform: scale(1.5);
 }
-@keyframes quadhide {
-  to {
-    transform: rotate(230deg);
-  }
-}
+
 .stereot-first {
   height: 20%;
   overflow: hidden;
@@ -2110,6 +2102,10 @@ hr {
   }
 }
 @media (max-width: 855px) {
+  .arrow:hover {
+    transform: scale(10);
+    transform: rotate(230deg);
+  }
   .inv-button {
     width: 7rem;
     height: 7rem;
@@ -2215,7 +2211,7 @@ hr {
     font-size: 1rem;
   }
   .arrow {
-    width: 4%;
+    width: 6%;
   }
   .years-txt-1 {
     width: 45%;
@@ -2260,6 +2256,7 @@ hr {
     font-size: 0.8rem;
   }
   .stereot-first {
+    padding-top: 1.4rem;
     width: 100%;
     height: 5rem;
   }
