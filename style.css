@@ -2231,7 +2231,7 @@ hr {
   }
   .left-stereot {
     width: 80%;
-
+    height: auto;
     margin: auto;
   }
   .text-stereot-1,
@@ -2240,15 +2240,12 @@ hr {
     font-size: 0.8rem;
   }
   .stereot-first {
-    transition: 1s;
-    height: 3rem;
-    padding: 0.5rem;
     width: 100%;
-    padding-bottom: 0.5rem;
+    height: 5rem;
   }
 
   .class-hight {
-    height: 70%;
+    height: 10rem;
   }
 
   .H-cont-best {
