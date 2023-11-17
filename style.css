@@ -535,7 +535,16 @@ h4 {
   width: 3%;
 }
 .arrow:hover {
+  animation-name: quadhide;
+  animation-duration: 1s;
+  animation-delay: 2s; /*задержка*/
+  animation-fill-mode: forwards;
   transform: scale(1.5);
+}
+@keyframes quadhide {
+  to {
+    transform: rotate(230deg);
+  }
 }
 .stereot-first {
   height: 20%;
