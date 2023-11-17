@@ -1774,6 +1774,17 @@ hr {
 .hidden {
   display: none;
 }
+
+.hiddens {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.visibles {
+  opacity: 1;
+  transform: translateY(0);
+}
 .visual {
   opacity: 0;
 }
