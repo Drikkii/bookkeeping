@@ -1770,9 +1770,20 @@ hr {
   background-color: var(--accents);
 }
 
-/*  */
+/* Hidden - anim */
 .hidden {
   display: none;
+}
+
+.hiddens {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.visibles {
+  opacity: 1;
+  transform: translateY(0);
 }
 .visual {
   opacity: 0;
@@ -2231,7 +2242,7 @@ hr {
   }
   .left-stereot {
     width: 80%;
-
+    height: auto;
     margin: auto;
   }
   .text-stereot-1,
@@ -2240,15 +2251,12 @@ hr {
     font-size: 0.8rem;
   }
   .stereot-first {
-    transition: 1s;
-    height: 3rem;
-    padding: 0.5rem;
     width: 100%;
-    padding-bottom: 0.5rem;
+    height: 5rem;
   }
 
   .class-hight {
-    height: 70%;
+    height: 10rem;
   }
 
   .H-cont-best {

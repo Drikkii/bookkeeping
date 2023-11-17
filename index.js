@@ -1,4 +1,4 @@
-// animacion
+// animation
 function onEntry(entry) {
   entry.forEach((change) => {
     if (change.isIntersecting) {
@@ -375,4 +375,307 @@ menu.addEventListener("click", function (e) {
     menuBtn.classList.remove("active");
     lock.classList.remove("lock");
   }
+});
+
+//
+
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("auts");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("auts2");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("auts3");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat1");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat2");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat3");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat4");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat5");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat6");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat7");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat8");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  let myDiv = document.getElementById("cat9");
+
+  function fadeIn() {
+    myDiv.classList.add("visibles");
+  }
+
+  function isElementInViewport() {
+    let rect = myDiv.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  function handleScroll() {
+    if (isElementInViewport()) {
+      fadeIn();
+      // Удаляем обработчик события после первого появления, если не нужно, чтобы элемент появлялся снова при дополнительной прокрутке.
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
+  // Проверяем видимость элемента при загрузке страницы
+  handleScroll();
 });
