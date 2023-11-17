@@ -66,28 +66,71 @@ let increaseText2 = document.querySelector(".text-stereot-2");
 let increaseText3 = document.querySelector(".text-stereot-3");
 
 increaseButton.addEventListener("click", function () {
-  myDiv.classList.toggle("class-hight");
-  increaseText1.classList.toggle("class-opasity");
-  myDiv2.classList.remove("class-hight");
-  increaseText2.classList.remove("class-opasity");
-  myDiv3.classList.remove("class-hight");
-  increaseText3.classList.remove("class-opasity");
+  const breakpoint = window.matchMedia("(max-width: 850px)");
+  if (breakpoint.matches) {
+    increaseButton.style.transform = "rotate(360deg)";
+    myDiv.classList.toggle("class-hight");
+    increaseText1.classList.toggle("class-opasity");
+    myDiv2.classList.remove("class-hight");
+    increaseText2.classList.remove("class-opasity");
+    myDiv3.classList.remove("class-hight");
+    increaseText3.classList.remove("class-opasity");
+    setTimeout(function () {
+      increaseButton.style.transform = "rotate(230deg)";
+    }, 500);
+    // code to be executed
+  } else {
+    myDiv.classList.toggle("class-hight");
+    increaseText1.classList.toggle("class-opasity");
+    myDiv2.classList.remove("class-hight");
+    increaseText2.classList.remove("class-opasity");
+    myDiv3.classList.remove("class-hight");
+    increaseText3.classList.remove("class-opasity");
+  }
 });
 increaseButton2.addEventListener("click", function () {
-  myDiv.classList.remove("class-hight");
-  increaseText1.classList.remove("class-opasity");
-  myDiv3.classList.remove("class-hight");
-  increaseText3.classList.remove("class-opasity");
-  myDiv2.classList.toggle("class-hight");
-  increaseText2.classList.toggle("class-opasity");
+  const breakpoint = window.matchMedia("(max-width: 850px)");
+  if (breakpoint.matches) {
+    increaseButton2.style.transform = "rotate(360deg)";
+    myDiv.classList.remove("class-hight");
+    increaseText1.classList.remove("class-opasity");
+    myDiv3.classList.remove("class-hight");
+    increaseText3.classList.remove("class-opasity");
+    myDiv2.classList.toggle("class-hight");
+    increaseText2.classList.toggle("class-opasity");
+    setTimeout(function () {
+      increaseButton2.style.transform = "rotate(230deg)";
+    }, 500);
+  } else {
+    myDiv.classList.remove("class-hight");
+    increaseText1.classList.remove("class-opasity");
+    myDiv3.classList.remove("class-hight");
+    increaseText3.classList.remove("class-opasity");
+    myDiv2.classList.toggle("class-hight");
+    increaseText2.classList.toggle("class-opasity");
+  }
 });
 increaseButton3.addEventListener("click", function () {
-  myDiv.classList.remove("class-hight");
-  increaseText1.classList.remove("class-opasity");
-  myDiv2.classList.remove("class-hight");
-  increaseText2.classList.remove("class-opasity");
-  myDiv3.classList.toggle("class-hight");
-  increaseText3.classList.toggle("class-opasity");
+  const breakpoint = window.matchMedia("(max-width: 850px)");
+  if (breakpoint.matches) {
+    increaseButton3.style.transform = "rotate(360deg)";
+    myDiv.classList.remove("class-hight");
+    increaseText1.classList.remove("class-opasity");
+    myDiv2.classList.remove("class-hight");
+    increaseText2.classList.remove("class-opasity");
+    myDiv3.classList.toggle("class-hight");
+    increaseText3.classList.toggle("class-opasity");
+    setTimeout(function () {
+      increaseButton3.style.transform = "rotate(230deg)";
+    }, 500);
+  } else {
+    myDiv.classList.remove("class-hight");
+    increaseText1.classList.remove("class-opasity");
+    myDiv2.classList.remove("class-hight");
+    increaseText2.classList.remove("class-opasity");
+    myDiv3.classList.toggle("class-hight");
+    increaseText3.classList.toggle("class-opasity");
+  }
 });
 
 // slider
@@ -679,3 +722,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Проверяем видимость элемента при загрузке страницы
   handleScroll();
 });
+
+// strelki
+let strFirst = document.querySelector(".str-first");
+let arrow = document.querySelector(".arrow");
