@@ -780,6 +780,27 @@ inputName.addEventListener("keyup", function (evt) {
   else if (length >= 1) inputName.style.borderColor = "green";
 });
 
+
+// MAIL in BUFFER
+
+let text = document.getElementById("copFn").innerHTML;
+const CopyFn = async () => {
+  try {
+    await navigator.clipboard.writeText(text);
+    let tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + text;
+    console.log("Content copied to clipboard");
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+};
+function outFunc() {
+  let tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+
+
 // FORM
 async function submitForm(event) {
   event.preventDefault(); // отключаем перезагрузку/перенаправление страницы

@@ -1237,6 +1237,7 @@ hr {
 }
 .number-under,
 .mail {
+  display: flex;
   width: 40%;
   margin: 0;
 }
@@ -1244,7 +1245,9 @@ hr {
   display: none;
 }
 .mail {
-  width: 100%;
+  margin: auto;
+  margin-left: 5rem;
+  width: 40%;
 }
 .mailto {
   width: 100%;
@@ -1289,6 +1292,7 @@ hr {
   width: 100%;
 }
 .icon-feed {
+  justify-content: space-between;
   gap: 1rem;
   display: flex;
   width: 100%;
@@ -1348,6 +1352,30 @@ hr {
 }
 
 /* footer */
+.under-inside {
+  height: 5rem;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 1rem 0 1rem;
+  z-index: 50;
+  position: relative;
+  align-items: center;
+  display: flex;
+  max-width: var(--full-size);
+  background-color: rgba(245, 222, 179, 0);
+}
+.polit-conf,
+.by-drikki {
+  transition: 0.5s;
+  color: white;
+  text-decoration: none;
+}
+.polit-conf:hover {
+  color: var(--accents);
+}
+.by-drikki:hover {
+  color: var(--accents);
+}
 .footer {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -1702,6 +1730,72 @@ hr {
 }
 .reg-button:hover {
   transform: scale(125%);
+}
+
+/* copy mail */
+.copy-name {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.card-number-profile {
+  margin: 0;
+  display: flex;
+  margin-left: 20px;
+  color: #0c0c0e;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.copyicon {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.tooltip {
+  border: none;
+  position: relative;
+  display: inline-block;
+}
+.copybutton {
+  padding: 0;
+  background-color: #ffffff00;
+  border: none;
+}
+.tooltip .tooltiptext {
+  padding-top: 2px;
+  height: 2rem;
+  visibility: hidden;
+  width: 15rem;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -115px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*  App-completed*/
@@ -2109,6 +2203,12 @@ hr {
   }
 }
 @media (max-width: 855px) {
+  .under-inside {
+    height: 9rem;
+    padding-top: 1rem;
+    text-align: center;
+    display: block;
+  }
   .mail {
     display: none;
   }

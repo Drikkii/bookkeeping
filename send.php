@@ -8,8 +8,8 @@ require 'phpmailer/Exception.php';
 if (!error_get_last()) {
 
     // Переменные, которые отправляет пользователь
-    $name = $_POST['name'] ;
-    $email = $_POST['email'];
+    $name = $_POST['name-reg'] ;
+    $email = $_POST['email-reg'];
 
     // Формирование самого письма
     $title = "Заголовок письма";
