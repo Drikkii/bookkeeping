@@ -366,22 +366,22 @@ AppbuttonGood.addEventListener("click", function () {
 });
 // open app menu
 
-RegButton.addEventListener("click", function () {
-  if (!Regbackground.classList.contains("hidden")) {
-    Regbackground.classList.remove("hidden");
-    Appmenu.classList.remove("hidden");
-    RegMenu.classList.add("visual");
-    setTimeout(function () {
-      Regbackground.classList.remove("visual");
-    }, 500);
-    setTimeout(function () {
-      Appmenu.classList.remove("visual");
-    }, 100);
-    setTimeout(function () {
-      RegMenu.classList.add("hidden");
-    }, 300);
-  }
-});
+// RegButton.addEventListener("click", function () {
+//   if (!Regbackground.classList.contains("hidden")) {
+//     Regbackground.classList.remove("hidden");
+//     Appmenu.classList.remove("hidden");
+//     RegMenu.classList.add("visual");
+//     setTimeout(function () {
+//       Regbackground.classList.remove("visual");
+//     }, 500);
+//     setTimeout(function () {
+//       Appmenu.classList.remove("visual");
+//     }, 100);
+//     setTimeout(function () {
+//       RegMenu.classList.add("hidden");
+//     }, 300);
+//   }
+// });
 
 // Burger menu
 let menuBtn = document.querySelector(".menu-burger");
@@ -723,6 +723,92 @@ document.addEventListener("DOMContentLoaded", function () {
   handleScroll();
 });
 
-// strelki
-let strFirst = document.querySelector(".str-first");
-let arrow = document.querySelector(".arrow");
+// Mail form
+// function sendEmail() {
+//   let name = document.getElementById("name")[0].value;
+//   let email = document.getElementById("email")[0].value;
+//   // let message = document.getElementsByName("message")[0].value;
+//   let subject = "Новое сообщение от " + name;
+//   let body = "Имя: " + name + "";
+//   body += "Email: " + email + "";
+//   // body += "Сообщение:" + message;
+//   window.open(
+//     "mailto:chevpavel@gmail.com?subject=" +
+//       encodeURIComponent(subject) +
+//       "&body=" +
+//       encodeURIComponent(body)
+//   );
+// }
+
+//валидность полей и ограничения
+
+//email
+
+const EMAIL_REGEXP =
+  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+
+const input = document.getElementById("email");
+
+function isEmailValid(value) {
+  return EMAIL_REGEXP.test(value);
+}
+
+function onInput() {
+  if (isEmailValid(input.value)) {
+    input.style.border = "solid";
+    input.style.borderColor = "green";
+  } else {
+    input.style.border = "solid";
+    input.style.borderColor = "red";
+  }
+}
+// function onInputlog() {
+//   if (isEmailValid(inputLogin.value)) {
+//     inputLogin.style.borderColor = "green";
+//   } else {
+//     inputLogin.style.borderColor = "red";
+//   }
+
+input.addEventListener("input", onInput);
+
+//Проверка Имя!
+const inputName = document.getElementById("name");
+
+inputName.addEventListener("keyup", function (evt) {
+  let length = this.value.length;
+  if (length <= 0) inputName.style.border = "solid";
+  else if (length >= 1) inputName.style.borderColor = "green";
+});
+
+// FORM
+async function submitForm(event) {
+  event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
+  try {
+    // Формируем запрос
+    const response = await fetch(event.target.action, {
+      method: "POST",
+      body: new FormData(event.target),
+    });
+    // проверяем, что ответ есть
+    if (!response.ok)
+      throw `Ошибка при обращении к серверу: ${response.status}`;
+    // проверяем, что ответ действительно JSON
+    const contentType = response.headers.get("content-type");
+    if (!contentType || !contentType.includes("application/json")) {
+      throw "Ошибка обработки. Ответ не JSON";
+    }
+    // обрабатываем запрос
+    const json = await response.json();
+    if (json.result === "success") {
+      // в случае успеха
+      alert(json.info);
+    } else {
+      // в случае ошибки
+      console.log(json);
+      throw json.info;
+    }
+  } catch (error) {
+    // обработка ошибки
+    alert(error);
+  }
+}

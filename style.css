@@ -53,7 +53,7 @@ h1 {
 }
 
 .head-inside {
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: auto;
   padding: 0 1rem 0 1rem;
   z-index: 50;
@@ -103,6 +103,7 @@ ul {
   text-decoration: none;
 }
 .number {
+  display: none;
   margin: 1rem 0 1rem;
   margin-left: auto;
   transition: 0.5s;
@@ -893,7 +894,7 @@ h4 {
   padding: 0.5rem;
   background-color: white;
   border-radius: 1rem;
-  width: 70%;
+  width: 90%;
 }
 .tariff-H2 {
   margin-bottom: 0.5rem;
@@ -1238,6 +1239,12 @@ hr {
 .mail {
   width: 40%;
   margin: 0;
+}
+.number-under {
+  display: none;
+}
+.mail {
+  width: 100%;
 }
 .mailto {
   width: 100%;
@@ -2102,6 +2109,9 @@ hr {
   }
 }
 @media (max-width: 855px) {
+  .mail {
+    display: none;
+  }
   .arrow:hover {
     transform: scale(10);
     transform: rotate(230deg);

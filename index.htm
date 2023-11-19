@@ -135,13 +135,24 @@
             </div>
           </div>
           <div class="form-ramka">
-            <form class="form-reg" action="#" method="post">
+            <form
+              class="form-reg"
+              enctype="multipart/form-data"
+              method="post"
+              id="form"
+              onsubmit="submitForm(event)"
+              action="send.php"
+            >
               <div class="underline-reg">
                 <input
+                  tabindex="1"
+                  type="text"
                   class="name-input-reg"
                   for="name"
                   id="name"
                   name="name"
+                  size="40"
+                  minlength="2"
                   oninput="if(/[^a-zA-ZА-Яа-яЁё]/.test(this.value)){let Selection = this.selectionStart-1;this.value=this.value.replace(/[^a-zA-ZА-Яа-яЁё , - ]/g,'');this.setSelectionRange(Selection, Selection);}"
                   placeholder=" Ваше имя"
                   required
@@ -150,33 +161,40 @@
               </div>
               <div class="underline-reg">
                 <input
+                  tabindex="2"
+                  type="email"
                   class="number-input-reg"
-                  for="name"
-                  id="name"
-                  name="name"
-                  maxlength="16"
-                  oninput="this.value = this.value.replace(/[^0-9---+-().]/g, '').replace(/(\..*)\./g, '$1');"
-                  placeholder="+7(___)___-__-__"
+                  for="email"
+                  id="email"
+                  name="email"
+                  maxlength="40"
+                  pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                  placeholder="Email"
                   required
                 />
                 <hr />
               </div>
               <div class="checkbox-reg">
                 <input
+                  tabindex="3"
                   class="input-check-reg"
                   type="checkbox"
                   id="check"
                   name="scales"
+                  required
                 />
                 <label for="check"></label>
                 <label class="label-check-reg" for=""
-                  >Нажимая на кнопку.Вы принимаете условия политики
-                  <a class="form-a-reg" href="#">конфиденциальности</a></label
+                  >Нажимая на кнопку.Вы принимаете
+                  <a class="form-a-reg" href="#"
+                    >условия политики конфиденциальности</a
+                  ></label
                 >
               </div>
+              <input class="reg-button" type="submit" value="Оставить заявку" />
             </form>
           </div>
-          <button class="reg-button">Оставить заявку</button>
+          <!-- <button class="reg-button">Оставить заявку</button> -->
         </div>
       </div>
 
@@ -409,10 +427,18 @@
         </div>
         <div class="stereotypes">
           <div class="left-stereot">
-            <div id="str-first" class="element-animation stereot-first stereot-first-1">
+            <div
+              id="str-first"
+              class="element-animation stereot-first stereot-first-1"
+            >
               <div class="h-ster">
                 <h4 class="H-ster-inf">Звонок или заявка</h4>
-                <img id="arrow" class="arr-1 arrow" src="icon/arrow.svg" alt="Arrow" />
+                <img
+                  id="arrow"
+                  class="arr-1 arrow"
+                  src="icon/arrow.svg"
+                  alt="Arrow"
+                />
               </div>
 
               <div class="text-stereot-1">
@@ -758,13 +784,13 @@
             </div>
             <div class="icon-feed">
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/telegram.svg" alt="telegram"
               /></a>
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/whatsapp.svg" alt="whatsapp"
               /></a>
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/mail.svg" alt="mail"
               /></a>
             </div>
           </div>
@@ -791,13 +817,13 @@
             </div>
             <div class="icon-feed">
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/telegram.svg" alt="telegram"
               /></a>
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/whatsapp.svg" alt="telegram"
               /></a>
               <a class="telegram" href=""
-                ><img class="icon" src="icon/telegram.png" alt="telegram"
+                ><img class="icon" src="icon/mail.svg" alt="telegram"
               /></a>
             </div>
           </div>
